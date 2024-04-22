@@ -8,7 +8,7 @@ public class UserEntity : IdentityUser
 
     public string LastName { get; set; } = null!;
 
-    public string? ProfileImage { get; set; } = "avtar.jpg";
+    public string? ProfileImage { get; set; } = "avatar.jpg";
 
     public string? Bio { get; set; }
 
