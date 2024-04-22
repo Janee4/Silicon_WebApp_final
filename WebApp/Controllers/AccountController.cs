@@ -145,11 +145,11 @@ public class AccountController : Controller
     public async Task<IActionResult> UploadProfileImage(IFormFile file)
     {
         var user = await _userManager.GetUserAsync(User);
-        
-        
-        
-        
-        
+
+
+
+
+
         if (user != null && file != null && file.Length != 0)
         {
             var fileName = $"p_{user.Id}_{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
