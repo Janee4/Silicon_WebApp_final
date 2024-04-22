@@ -40,9 +40,14 @@
                                 }
                                 <div class="price @(!string.IsNullOrEmpty(course.DiscountPrice)? "discount-enabled" : "") ">@course.Price </div>
 
+                            </div>
+                            <div class="footer">
+                                <div action="hour">
+                                    <i class="fa-regular fa-clock"></i> @course.Hours hours
                                 </div>
-                                <div class="footer">
-                                    <div action="hour"></div> 
+                                <div class="likes">
+                                    <i class="fa regular fa-thumbs-up"></i> @course.LikesInProcent (@course.LikesInNumbers)
+                                </div>
                             </div>
                         </div>
                     </a>

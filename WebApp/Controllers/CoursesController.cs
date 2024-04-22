@@ -11,6 +11,7 @@ public class CoursesController(HttpClient httpClient) : Controller
 
     private readonly HttpClient _httpClient = httpClient;
 
+    [Route("/courses")]
     public async Task<IActionResult> Index()
     {
         var viewModel = new CourseIndexViewModel();
