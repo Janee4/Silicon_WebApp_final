@@ -17,7 +17,7 @@
         </form>
 
         <div class="course-items">
-            @if (Model.Cou != null)
+            @if (Model.Courses != null)
             {
                 @foreach (var course in Model.Courses)
                 {
@@ -30,9 +30,23 @@
 
                         <img src="~/images/courses/@course.Image" alt="@course.Title" />
 
+                        <div class="content">
+                            <h5 class="title">@course.Title</h5>
+                            <p class="author">By @course.Author</p>
+                            <div class="pricing">
+                                @if (!string.IsNullOrEmpty(course.DiscountPrice))
+                                {
+                                    <div class="discount">@course.DiscountPrice</div>
+                                }
+                                <div class="price @(!string.IsNullOrEmpty(course.DiscountPrice)? "discount-enabled" : "") ">@course.Price </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div action="hour"></div> 
+                            </div>
+                        </div>
                     </a>
                 }
-
             }
 
         </div>

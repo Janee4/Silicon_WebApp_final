@@ -2,5 +2,5 @@
 
 public class CourseIndexViewModel
 {
-    public IEnumerable<CourseViewModel> Course { get; set; } = [];
+    public IEnumerable<CourseViewModel> Courses { get; set; } = [];
 }

@@ -21,7 +21,7 @@ public class CoursesController(HttpClient httpClient) : Controller
         {
             var courses = JsonConvert.DeserializeObject<IEnumerable<CourseViewModel>>(await response.Content.ReadAsStringAsync());
             if (courses != null && courses.Any())
-                viewModel.Course = courses;
+                viewModel.Courses = courses;
 
         }
 
