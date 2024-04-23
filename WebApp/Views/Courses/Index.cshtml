@@ -29,6 +29,10 @@
 
                         <span class="btn btn-circle bookmark"><i class="fa-regular fa-bookmark"></i></span>
 
+                        <!--börja med att gå in i webbapiet (databasen) och kolla upp vad varje bild har för ID dvs bild 1 heter ("course_1) med ID:t
+                            på bilden är nr 4. Då får du lägga in namnet på bilden som "courses_4" eftersom att den i sökvägen heter "courses_" och sedan
+                            ID:t på bilden (ID:T som finns i WEbapi databasen)
+                        -->
                         <img src="~/images/courses/@($"courses_{course.Id}.jpg")" alt="@course.Title" />
 
                         <div class="content">

@@ -1,0 +1,24 @@
+﻿@model SubscribeViewModel
+
+<section class="subscribe">
+    <div class="container">
+        <div class="title">
+            <h2>Don't Want to Miss Anything</h2>
+            <img src="~/images/icons/swirl-arrow-icon.svg" alt="swirl-arrow"/>
+        </div>
+        <form method="post" asp-action="Subscribe" asp-controller="Default">
+            <div class="alternative">
+                <h4>Sign up for Newsletters</h4>
+                
+                <div class="options">
+                    <div class="checkbox-group">
+                        <div class="input-group">
+                            <input asp-for="DailyNewsletter"/>
+                            <label asp-for="DailyNewsletter"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
